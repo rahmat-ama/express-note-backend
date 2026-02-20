@@ -96,7 +96,7 @@ export const deleteNote = (req, res) => {
   notes.splice(noteId, 1);
 
   return res.status(200).json({
-    status: "fail",
+    status: "success",
     message: "Catatan berhasil dihapus",
     data: { notes },
   });
